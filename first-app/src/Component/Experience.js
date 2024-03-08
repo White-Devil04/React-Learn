@@ -1,5 +1,9 @@
 import React from 'react';
 function Experience({experience}) {
+  if( !experience|| experience.length==0) {
+    return null;
+  }
+  
   return (
     <div>
       <h2>Experience</h2>

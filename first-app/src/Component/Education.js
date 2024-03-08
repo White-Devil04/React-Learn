@@ -1,5 +1,9 @@
 import React from 'react';
 function Education({education}) {
+  if( !education|| education.length==0) {
+    return null;
+  }
+  
   return (
     <div>
       <h2>Education</h2>

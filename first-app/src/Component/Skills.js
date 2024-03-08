@@ -1,5 +1,9 @@
 import React from 'react';  
 function Skills({skills}) {
+  if( !skills|| skills.length==0) {
+    return null;
+  }
+  
   return (
     <div>
 <h2>Skills</h2>
