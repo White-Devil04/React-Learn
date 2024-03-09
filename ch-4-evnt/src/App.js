@@ -30,15 +30,12 @@ function App() {
 
   ];
   return (
-    <div className="App">
+    <div className="App" onClick={()=>console.log("app")}>
       <header className="App-header">
         {videos.map((video, index) => (
           <Video key={index} video={video} />
         ))}
       </header>
-        <div style={{clear:'both'}}>
-          <PlayBtn />
-        </div>
     </div>
   );
 }
