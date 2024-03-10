@@ -1,5 +1,6 @@
 import React from 'react';
 import Resume from "./Component/Resume";
+import PrintBtn from "./Component/PrintBtn";
 function App() {
   const resumes = [{
     name: 'John Doe',
@@ -21,6 +22,7 @@ function App() {
       {resumes.map((resume,i) => (
         <Resume resumeData={resume}/>
       ))}
+      <PrintBtn/>
     </div>
   );
 }
